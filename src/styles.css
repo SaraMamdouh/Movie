@@ -114,3 +114,9 @@ body{
     background-color:linear-gradient(to top, #202020, rgb(2 2 2 / 90%));
     background-blend-mode: overlay;
 }
+@media(max-width:576px){
+    .home-button{
+        padding:10px;
+        margin-right: 7px;
+    }
+}

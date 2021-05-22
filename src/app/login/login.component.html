@@ -16,18 +16,21 @@
   </div>
 </div>
 <form #loginForm="ngForm" (ngSubmit)="loginForm.valid && Check(loginForm.value)" novalidate>
-  <div class="alert alert-danger" role="alert" *ngIf="valid">
+  <div class="alert alert-danger" role="alert" *ngIf="loginForm.valid && valid" >
    email or password is incorrect
   </div>
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" (ngModel)="email" name="email">
-      <em class="error" *ngIf="valid && !loginForm.controls.email.dirty">Please enter a valid Email</em>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" (ngModel)="email" name="email" required 
+      #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+$" >
+      <em class="error" *ngIf="loginForm.submitted && email.errors?.required || email.errors?.required && email.dirty">Please enter your Email</em>
+      <em class="error" *ngIf="email.errors?.pattern">please enter a valid Email</em>
+
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" (ngModel)="password" name="password">
-      <em class="error"  *ngIf="valid && !loginForm.controls.password.dirty">Your password must contain between 4 and 60 characters.</em>
+      <input type="password" class="form-control" id="exampleInputPassword1" (ngModel)="password" name="password" required>
+      <em class="error"  *ngIf="loginForm.submitted && loginForm.controls.password?.invalid || loginForm.controls.password?.invalid && loginForm.controls.password?.dirty">Your password must contain between 4 and 60 characters.</em>
     </div>
     <div class="mb-3 form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">

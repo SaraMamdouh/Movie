@@ -1,0 +1,8 @@
+@media(max-width:567px){
+    :host ::ng-deep .reply-section{
+        grid-template-columns: 10% 90%!important;
+    }
+    :host ::ng-deep .fa-user{
+        margin-left: -11px!important;
+    }
+}

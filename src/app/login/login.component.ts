@@ -25,7 +25,7 @@ Check(user:any):void{
 this.user.map((item:any)=>{
   if(item.email===user.email && item.password===user.password){
     this.userService.setName(item.name)
-    this.router.navigateByUrl("/home")
+    this.router.navigate(["/home"])
   }
   else{
 this.valid=true

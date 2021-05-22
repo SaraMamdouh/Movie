@@ -59,7 +59,6 @@ export class ChatComponent implements OnInit {
 this.userService.getUsers().subscribe((user:any)=>{
     this.users=user.filter((item:any)=>item.name!==this.currentUser).map((item:any)=>item.name)
 })
-console.log(this.chats)
   }
 
 

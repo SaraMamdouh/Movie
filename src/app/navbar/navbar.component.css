@@ -140,6 +140,9 @@ z-index: -1;
     top: 49px;
     padding-right: 2rem!important;
   }
+  .dropdown-menu{
+      left:-93px
+  }
   }
 
 @media(min-width:576px) and (max-width:992px){

@@ -48,13 +48,13 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    grid-template-columns: 20% 80% 20%;
+    grid-template-columns: 30% 80% 30%;
     padding-bottom: 20px;
 }
 .home-button{
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 2vmin;
 }
 .fas,.far{
     font-size: 20px;

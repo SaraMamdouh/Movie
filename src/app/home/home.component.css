@@ -145,8 +145,44 @@
     width: 100%;
 }
 
+@media(max-width:576px){
+    .home-content h1{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .specification{
+        width: 85%;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    .home-content p{
+        width: 100%;
+    }
+    .bg-1{
+        height: 460px;
+    }
+    .bg-1 img{
+        height: 100%!important;
+    }
+    .home .container-fluid{
+        padding: 0px 65px;
+    }
+    .subscribe-header{
+        font-size: 30px;
+    }
+    .subscribe-content{
+        width: 70%;
+    }
+    .movie-card{
+        margin-bottom: 20px;
+    }
+    .movies .nav-tabs .nav-link{
+        padding: 0.5rem 0.8rem;
+}
 
-@media(max-width:767px){
+}
+
+@media (min-width:577px) and (max-width:767px){
     .home-content h1{
         font-size: 40px;
         margin: 10px 0;
@@ -175,6 +211,7 @@
     .subscribe-content{
         width: 70%;
     }
+ 
 }
 
 @media (max-width:992px){

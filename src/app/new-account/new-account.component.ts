@@ -54,7 +54,7 @@ export class NewAccountComponent implements OnInit {
 
   ngOnInit(): void {
     this.name=new FormControl("",Validators.required);
-    this.email=new FormControl("",[Validators.required,  	Validators.email]);
+    this.email=new FormControl("",[Validators.required,Validators.email]);
     this.password=new FormControl("",[Validators.required,this.validatePassword]);
     this.confirmPassword=new FormControl("",Validators.required)
     this.registerForm=new FormGroup({

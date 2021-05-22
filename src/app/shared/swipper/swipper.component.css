@@ -22,7 +22,7 @@
     color: #fff;
 }
 .title{
-    font-size: 27px;
+    font-size: 5vmin;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -42,6 +42,15 @@
     background: linear-gradient(
 90deg
 , rgb(39 40 41) 0%, rgb(39 40 41) 35%, rgba(83, 100, 141, 0) 100%);
+}
+@media(max-width:567px){
+    .swipper-caption{
+        width: 90%;
+    }
+   
+    .description{
+        margin-bottom: 7px!important;
+    }
 }
 @media (max-width:992px){
     .swipper-caption{

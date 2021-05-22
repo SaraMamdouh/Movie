@@ -72,3 +72,11 @@ ul{
 .link:hover{
     color: #ff0000!important;
 }
+@media(max-width:567px){
+    .reply-section{
+        grid-template-columns: 18% 90%;
+    }
+    .fa-user{
+        margin-left: -15px;
+    }
+}

@@ -1,4 +1,4 @@
-::ng-deep .fixed-top{
+:host ::ng-deep .fixed-top{
     position: relative;
 }
 
@@ -21,7 +21,7 @@ select {
     margin-top: 15px;
 }
 .filter-header{
-    font-size: 18px;
+    font-size: 3vmin;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.1rem;
